@@ -52,14 +52,16 @@ while True:
     nama_poligon(bil_sisi)
     time.sleep (3)
     lukis_bentuk(bil_sisi)
+    time.sleep(5)
+    cute.clear()
+    
 
     pilih = input("Ada lagi (y/t)")
     if pilih =="t":
         break
-
+    
 
     
 turtle.done()
     
   
-
