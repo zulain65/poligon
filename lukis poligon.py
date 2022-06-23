@@ -4,12 +4,15 @@
 
 import turtle
 import time
+import random
+
+color=["cyan","purple","black","blue"] 
 
 #memanggil turtle
 cute=turtle.Turtle()
 cute.shape("turtle")
 cute.pensize(2)
-cute.color("black")
+cute.color(random.choice (color))
 cute.speed(1)
 
 #proses melukis
