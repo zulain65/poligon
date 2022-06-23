@@ -18,6 +18,7 @@ def lukis_bentuk(bil_sisi):
     for x in range(bil_sisi):
         cute.forward(100)
         cute.left(360/bil_sisi)
+    return lukis_bentuk
 
 #proses menamakan poligon
         
@@ -40,15 +41,25 @@ def nama_poligon(bil_sisi):
         print("Dekagon")
     else:
         print("Opps sorry i dont'know")
+    return nama_poligon
 
+      
 
 #start kod
-bil_sisi = int(input("Masukkan bilangan bilangan sisi poligon yang ingin depelajari, 3 hingga 10 : "))
+while True:
+    bil_sisi = int(input("Masukkan bilangan bilangan sisi poligon yang ingin depelajari, 3 hingga 10 : "))
 
-nama_poligon(bil_sisi)
-time.sleep (10)
-lukis_bentuk(bil_sisi)
+    nama_poligon(bil_sisi)
+    time.sleep (3)
+    lukis_bentuk(bil_sisi)
+
+    pilih = input("Ada lagi (y/t)")
+    if pilih =="t":
+        break
+
 
     
 turtle.done()
+    
+  
 
